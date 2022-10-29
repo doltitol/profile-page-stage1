@@ -44,7 +44,7 @@ const Slack = (props) => (
             fill="#36C5F0"
         />
     </svg>
-)
+);
 const Github = (props) => (
     <svg
         width={ props.size }
@@ -125,7 +125,7 @@ const Camera = (props) => (
             strokeLinejoin="round"
         />
     </svg>
-)
+);
 const ZuriIntershipLogo = (props) => (
     <svg
         width={ props.width }
@@ -144,7 +144,39 @@ const ZuriIntershipLogo = (props) => (
             fill="#E7332B"
         />
     </svg>
-)
+);
+const Dots = (props) => (
+    <svg
+        width={ props.size }
+        height={ props.size }
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        { ...props }
+    >
+        <path
+            d="M9.99998 10.8334C10.4602 10.8334 10.8333 10.4603 10.8333 10.0001C10.8333 9.53984 10.4602 9.16675 9.99998 9.16675C9.53974 9.16675 9.16665 9.53984 9.16665 10.0001C9.16665 10.4603 9.53974 10.8334 9.99998 10.8334Z"
+            stroke={ props.color }
+            strokeWidth={ 1.66667 }
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            d="M15.8333 10.8334C16.2935 10.8334 16.6666 10.4603 16.6666 10.0001C16.6666 9.53984 16.2935 9.16675 15.8333 9.16675C15.3731 9.16675 15 9.53984 15 10.0001C15 10.4603 15.3731 10.8334 15.8333 10.8334Z"
+            stroke={ props.color }
+            strokeWidth={ 1.66667 }
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            d="M4.16665 10.8334C4.62688 10.8334 4.99998 10.4603 4.99998 10.0001C4.99998 9.53984 4.62688 9.16675 4.16665 9.16675C3.70641 9.16675 3.33331 9.53984 3.33331 10.0001C3.33331 10.4603 3.70641 10.8334 4.16665 10.8334Z"
+            stroke={ props.color }
+            strokeWidth={ 1.66667 }
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+    </svg>
+);
 export const Icons = {
     Share,
     Slack,
@@ -152,4 +184,5 @@ export const Icons = {
     I4G,
     Camera,
     ZuriIntershipLogo,
+    Dots,
 };
