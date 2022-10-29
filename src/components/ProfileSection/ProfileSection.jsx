@@ -9,7 +9,7 @@ const ProfileSection = () => {
     return (
         <div className='profile-section'>
             <ShareButton />
-            <ProfileImage profile_img={ profile_img } alt={ twitter } />
+            {/* <ProfileImage profile_img={ profile_img } alt={ twitter } /> */ }
             <h1 className='twitter'>{ twitter }</h1>
         </div>
     );
