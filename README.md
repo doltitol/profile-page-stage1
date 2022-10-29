@@ -12,5 +12,5 @@ Builds the app for production to the `build` folder.\
 
 ## View Project
 
-You can view the [Profile Stage 1 Task on](https://facebook.github.io/create-react-app/docs/getting-started).
+You can view the [Profile Stage 1 Task on](https://tangerine-frangollo-3f0e70.netlify.app/).
 

@@ -1,0 +1,11 @@
+.social-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.social-section-icon {
+    margin: 0 10px;
+}
