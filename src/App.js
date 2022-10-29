@@ -1,13 +1,10 @@
-import { Icons } from "./assets/icons";
+import Footer from './components/Footer/Footer';
 
 
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
-      <Icons.I4G width={ 130 } height={ 34 } />
-      <Icons.Camera size={ 30 } color="pink" />
-      <Icons.ZuriIntershipLogo width={ 130 } height={ 34 } />
+      <Footer />
     </div>
   );
 }
