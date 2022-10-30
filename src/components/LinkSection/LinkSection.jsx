@@ -1,14 +1,13 @@
 import React from 'react';
 import './LinkSection.css';
-import { ProfileData } from '../../assets/data/ProfileData';
 import Button from '../Button/Button';
 
-const LinkSection = () => {
+const LinkSection = ({ profileData }) => {
     const buttonsData = [
         {
             id: 'twitter',
             buttonText: 'twitter link',
-            buttonUrl: `https://twitter.com/${ ProfileData.twitter_handle }`,
+            buttonUrl: `https://twitter.com/${ profileData.twitter_handle }`,
             buttonSubText: 'Twitter'
         },
         {
@@ -26,12 +25,12 @@ const LinkSection = () => {
         {
             id: 'book__python',
             buttonText: 'python books',
-            buttonUrl: `https://books.zuri.team/python-for-beginners?ref_id=${ ProfileData.slack }`,
+            buttonUrl: `https://books.zuri.team/python-for-beginners?ref_id=${ profileData.slack }`,
             buttonSubText: 'Python books'
         },
         {
             id: 'pitch',
-            buttonText: 'python books',
+            buttonText: 'background check for coders',
             buttonUrl: `https://background.zuri.team`,
             buttonSubText: 'Where you pitch a service for doing background checks on coders'
         },
@@ -45,7 +44,7 @@ const LinkSection = () => {
     return (
         <div className='link-section'>
             { buttonsData.map((button) => (
-                <Button buttonUrl={ button.buttonUrl } buttonText={ button.buttonText } key={ button.id } />
+                <Button buttonUrl={ button.buttonUrl } buttonText={ button.buttonText } buttonSubText={ button.buttonSubText } key={ button.id } />
             )) }
         </div>
     );
