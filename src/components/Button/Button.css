@@ -8,9 +8,10 @@
     font-size: 18px;
     line-height: 28px;
     padding: 24px 32px;
-    text-transform: capitalize;
+    text-transform: normal;
     border-radius: 8px;
     text-decoration: none;
+    transition: all 0.4s ease-in-out;
 }
 
 .button:hover {
