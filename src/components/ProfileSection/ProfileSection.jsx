@@ -1,11 +1,10 @@
 import React from 'react';
 import ProfileImage from '../ProfileImage/ProfileImage';
 import ShareButton from '../ShareButton/ShareButton';
-import { ProfileData } from '../../assets/data/ProfileData';
 import './ProfileSection.css';
 
-const ProfileSection = () => {
-    const { profile_img, twitter } = ProfileData;
+const ProfileSection = (props) => {
+    const { profile_img, twitter } = props.profileData;
     return (
         <div className='profile-section'>
             <ShareButton />

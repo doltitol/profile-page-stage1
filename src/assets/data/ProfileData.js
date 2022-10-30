@@ -3,5 +3,6 @@ export const ProfileData = {
     twitter: 'Tubi Oludolapo T',
     twitter_handle: 'tubioludolapo',
     slack: 'Oludolapo Adegoroye',
+    slackUrl: 'https://hng9.slack.com',
     github: 'doltitol/profile-page-stage1'
 };

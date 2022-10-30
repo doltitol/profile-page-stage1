@@ -1,7 +1,5 @@
 .container {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     margin: 0 auto;
     padding: 0 32px;
 }
@@ -32,6 +30,7 @@
 
 @media (max-width: 576px) {
     .container {
-        max-width: 540px;
+        max-width: 560px;
+        padding: 0 15px;
     }
 }
