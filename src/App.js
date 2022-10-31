@@ -66,7 +66,7 @@ function App() {
             </button>
           </div>
           <button className='profile-image'>
-            <img src={ profileData.profile_img } alt={ profileData.slack } />
+            <img src={ profileData.profile_img } alt={ profileData.slack } id='profile_img' />
             <div className='camera'>
               <Icons.Camera color='#ffffff' size={ 25 } />
             </div>
@@ -79,7 +79,7 @@ function App() {
         <div className='link-section'>
           { buttonsData.map((button) => (
             <a href={ button.buttonUrl } title={ button.buttonSubText } className={ disabled ? 'disabled' : 'button' }
-              target='_blank' rel='noreferrer' key={ button.id }>
+              target='_blank' rel='noreferrer' key={ button.id } id={ button.id }>
               { button.buttonText }
             </a>
           )) }
