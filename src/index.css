@@ -38,6 +38,7 @@ label {
   font-family: var(--font-family);
   font-weight: 500;
   margin-bottom: 5px;
+  display: block;
 }
 
 input,
@@ -51,6 +52,7 @@ textarea {
   font-weight: 400;
   font-family: var(--font-family);
   background: #FFFFFF;
+  display: block;
 }
 
 input::placeholder,
