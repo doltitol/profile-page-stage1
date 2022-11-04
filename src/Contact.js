@@ -8,6 +8,7 @@ const Contact = () => {
         email: false,
         message: false
     });
+    const name = 'Oludolapo';
     return (
         <div className='container'>
             <div className='contact'>
@@ -40,6 +41,15 @@ const Contact = () => {
                             <label htmlFor='message'>Message</label>
                             <textarea rows={ 5 } id='message' name='message' className={ hint.message ? 'error' : '' } placeholder={ `Send me a message and I'll reply you as soon as possible...` } />
                             <p className='hint' style={ { display: hint.message ? 'block' : 'none', color: '#F83F23' } }>Please enter a message.</p>
+                        </div>
+                    </div>
+                    <div className='row'>
+                        <div className='col-100'>
+                            <div className='checkbox-container'>
+                                <input type='checkbox' />
+                                <span className='checkbox'></span>
+                                <p className='checkbox-label'>You agree to providing your data to { name } who may contact you.</p>
+                            </div>
                         </div>
                     </div>
                 </main>

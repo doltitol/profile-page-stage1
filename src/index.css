@@ -4,6 +4,7 @@
   --font-family: 'Inter', sans-serif;
   --base-white: #ffffff;
   --primary-300: #84CAFF;
+  --primary-600: #1570EF;
   --gray-25: #FCFCFD;
   --gray-50: #F9FAFB;
   --gray-100: #F2F4F7;
@@ -66,6 +67,84 @@ textarea:focus {
   border: 1px solid var(--primary-300);
   box-shadow: var(--box-shadow);
   outline: none;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 20px;
+  height: 22px;
+  z-index: 2;
+  cursor: pointer
+}
+
+.checkbox-container {
+  display: flex;
+}
+
+.checkbox {
+  border-radius: 6px;
+  width: 22px;
+  height: 22px;
+  background-color: var(--base-white);
+  border: 1px solid var(--gray-300);
+  margin-right: 10px;
+}
+
+.checkbox.disabled-checkbox,
+input[type="checkbox"]:checked~.checkbox.disabled-checkbox,
+input[type="checkbox"]:focus~.checkbox.disabled-checkbox {
+  background-color: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  box-shadow: none;
+}
+
+input[type="checkbox"]:checked~.checkbox {
+  border: 1px solid var(--primary-600);
+  background-color: #F9FAFB;
+}
+
+input[type="checkbox"]:focus~.checkbox {
+  border: 1px solid var(--primary-600);
+  box-shadow: 0px 0px 0px 4px var(--primary-300);
+  background-color: var(--base-white);
+}
+
+.checkbox:after {
+  content: "";
+  position: relative;
+  display: none;
+}
+
+.checkbox-container input[type="checkbox"]:checked~.checkbox:after {
+  display: block;
+}
+
+.checkbox-container input[type="checkbox"]:checked~.checkbox.disabled-checkbox:after {
+  display: none;
+}
+
+
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkbox:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: 1px solid var(--primary-600);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(315deg);
+  transform: rotate(45deg);
+}
+
+.checkbox-label {
+  color: var(--gray-600);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: var(--font-family);
 }
 
 .error {
@@ -484,6 +563,11 @@ textarea:focus {
   .ml-10 {
     margin-left: 0px;
   }
+
+  .checkbox {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -525,5 +609,10 @@ textarea:focus {
 
   .ml-10 {
     margin-left: 0px;
+  }
+
+  .checkbox {
+    width: 27px;
+    height: 22px;
   }
 }
