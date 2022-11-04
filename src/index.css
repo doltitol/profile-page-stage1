@@ -40,6 +40,12 @@ a {
   position: relative;
 }
 
+.contact {
+  width: 100%;
+  padding: 150px;
+  margin: 0 auto;
+}
+
 .twitter {
   font-family: var(--font-family);
   font-size: 18px;
