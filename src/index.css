@@ -3,6 +3,7 @@
 :root {
   --font-family: 'Inter', sans-serif;
   --base-white: #ffffff;
+  --primary-300: #84CAFF;
   --gray-25: #FCFCFD;
   --gray-50: #F9FAFB;
   --gray-100: #F2F4F7;
@@ -11,6 +12,7 @@
   --gray-400: #98A2B3;
   --gray-500: #667085;
   --gray-600: #475467;
+  --gray-700: #344054;
   --gray-900: #101828;
   --box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 }
@@ -27,6 +29,41 @@ body {
 
 a {
   text-decoration: none;
+}
+
+label {
+  color: var(--gray-700);
+  font-size: 14px;
+  line-height: 20px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--gray-300);
+  font-size: 16px;
+  color: var(--gray-900);
+  line-height: 24px;
+  font-weight: 400;
+  font-family: var(--font-family);
+  background: #FFFFFF;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--gray-500);
+}
+
+input:focus,
+textarea:focus {
+  background: #FFFFFF;
+  border: 1px solid var(--primary-300);
+  box-shadow: var(--box-shadow);
+  outline: none;
 }
 
 .container {
@@ -64,14 +101,32 @@ a {
   margin-bottom: 20px;
 }
 
+.hint {
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray-600);
+  margin-top: 5px;
+}
+
 .row {
   display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
 }
 
 .col-50 {
   width: 50%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.col-100 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .mr-10 {
@@ -403,8 +458,21 @@ a {
     font-size: 18px;
   }
 
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
   .col-50 {
     width: 100%;
+  }
+
+  .mr-10 {
+    margin-right: 0px;
+  }
+
+  .ml-10 {
+    margin-left: 0px;
   }
 }
 
@@ -432,7 +500,20 @@ a {
     font-size: 18px;
   }
 
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
   .col-50 {
     width: 100%;
+  }
+
+  .mr-10 {
+    margin-right: 0px;
+  }
+
+  .ml-10 {
+    margin-left: 0px;
   }
 }
