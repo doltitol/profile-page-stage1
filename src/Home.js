@@ -83,7 +83,7 @@ const Home = () => {
                             { button.buttonText }
                         </a>
                     )) }
-                    <a href={ '/contact' } title='Contact Me' className={ disabled ? 'disabled' : 'button' }
+                    <a href='/contact' title='Contact Me' className={ disabled ? 'disabled' : 'button' }
                         id='contact'>
                         Contact Me
                     </a>
