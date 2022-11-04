@@ -10,6 +10,7 @@
   --gray-300: #D0D5DD;
   --gray-400: #98A2B3;
   --gray-500: #667085;
+  --gray-600: #475467;
   --gray-900: #101828;
   --box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 }
@@ -38,6 +39,29 @@ a {
   width: 100%;
   margin: 0 auto;
   position: relative;
+}
+
+.contact {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact header h1 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--gray-900);
+  margin-bottom: 20px;
+}
+
+.contact header p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--gray-600);
+  margin-bottom: 20px;
 }
 
 .twitter {
@@ -297,11 +321,15 @@ a {
 
 @media (min-width: 1440px) {
   .container {
-    max-width: 1320px;
+    min-width: 1320px;
   }
 
   .profile-section {
-    max-width: 960px;
+    min-width: 960px;
+  }
+
+  .contact {
+    padding: 200px;
   }
 }
 
@@ -313,9 +341,13 @@ a {
   .profile-section {
     max-width: 960px;
   }
+
+  .contact {
+    padding: 200px;
+  }
 }
 
-@media (min-width: 992px) and (max-width: 767px) {
+@media (min-width: 767px) and (max-width: 1999px) {
   .container {
     max-width: 960px;
   }
@@ -323,15 +355,34 @@ a {
   .profile-section {
     max-width: 960px;
   }
+
+  .contact {
+    width: 100%;
+    padding: 100px;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 575px) {
+@media (min-width: 575px) and (max-width: 768px) {
   .container {
     max-width: 720px;
   }
 
   .profile-section {
     max-width: 720px;
+  }
+
+  .contact {
+    width: 100%;
+    padding: 30px 3px;
+  }
+
+  .contact header h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .contact header p {
+    font-size: 18px;
   }
 }
 
@@ -343,5 +394,19 @@ a {
 
   .profile-section {
     max-width: 540px;
+  }
+
+  .contact {
+    width: 100%;
+    padding: 30px 3px;
+  }
+
+  .contact header h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .contact header p {
+    font-size: 18px;
   }
 }
