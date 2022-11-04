@@ -6,7 +6,7 @@ const Contact = () => {
         firstName: false,
         lastName: false,
         email: false,
-        message: true
+        message: false
     });
     return (
         <div className='container'>
@@ -38,7 +38,7 @@ const Contact = () => {
                     <div className='row'>
                         <div className='col-100'>
                             <label htmlFor='message'>Message</label>
-                            <textarea rows={ 10 } id='message' name='message' className={ hint.message ? 'error' : '' } />
+                            <textarea rows={ 5 } id='message' name='message' className={ hint.message ? 'error' : '' } placeholder={ `Send me a message and I'll reply you as soon as possible...` } />
                             <p className='hint' style={ { display: hint.message ? 'block' : 'none', color: '#F83F23' } }>Please enter a message.</p>
                         </div>
                     </div>
